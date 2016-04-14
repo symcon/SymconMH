@@ -1,0 +1,10 @@
+{
+  "elements":
+  [
+    { "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Adresse" }
+  ],
+  "actions":
+  [
+    { "type": "Button", "label": "Gerät auslesen", "onClick": "MA2_RequestStatus($id);" }
+  ]
+}
