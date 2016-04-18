@@ -109,6 +109,7 @@ class MoehlenhoffAlpha2 extends IPSModule
 		//These lines are parsed on Symcon Startup or Instance creation
 		//You cannot use variables here. Just static values.
 		$this->RegisterPropertyString("IPAddress", "172.17.31.161");
+		$this->RegisterPropertyInteger("Interval", 0);
 
 		$this->RegisterPropertyBoolean("ShowHeatCtrl1", true);
 		$this->RegisterPropertyBoolean("ShowHeatCtrl2", false);
@@ -122,6 +123,9 @@ class MoehlenhoffAlpha2 extends IPSModule
 		$this->RegisterPropertyBoolean("ShowHeatCtrl10", false);
 		$this->RegisterPropertyBoolean("ShowHeatCtrl11", false);
 		$this->RegisterPropertyBoolean("ShowHeatCtrl12", false);
+
+		//Timer
+		$this->RegisterTimer("UpdateTimer", 0, 'MA2_RequestStatus($_IPS[\'TARGET\']);');
 
 		//Variablenprofile
 		//VACATION_STATE
@@ -236,6 +240,8 @@ class MoehlenhoffAlpha2 extends IPSModule
 	public function ApplyChanges(){
 		//Never delete this line!
 		parent::ApplyChanges();
+
+		$this->SetTimerInterval("UpdateTimer", $this->ReadPropertyInteger("Interval")*1000);
 
 		foreach(self::$values as $key => $value){
 

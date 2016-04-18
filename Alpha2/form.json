@@ -1,7 +1,9 @@
 {
   "elements":
   [
-    { "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Adresse" },
+	{ "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Adresse" },
+	{ "type": "Label", "label":  "Intervall für das Abfragen der Daten" },
+	{ "type": "IntervalBox", "name" : "Interval", "caption": "Sekunden" },
 	{ "type": "CheckBox", "name": "ShowHeatCtrl1", "caption": "Heizkreislauf 1" },
 	{ "type": "CheckBox", "name": "ShowHeatCtrl2", "caption": "Heizkreislauf 2" },
 	{ "type": "CheckBox", "name": "ShowHeatCtrl3", "caption": "Heizkreislauf 3" },
@@ -14,10 +16,9 @@
 	{ "type": "CheckBox", "name": "ShowHeatCtrl10", "caption": "Heizkreislauf 10" },
 	{ "type": "CheckBox", "name": "ShowHeatCtrl11", "caption": "Heizkreislauf 11" },
 	{ "type": "CheckBox", "name": "ShowHeatCtrl12", "caption": "Heizkreislauf 12" }
-
   ],
   "actions":
   [
-    { "type": "Button", "label": "Gerät auslesen", "onClick": "MA2_RequestStatus($id);" }
+	{ "type": "Button", "label": "Gerät auslesen", "onClick": "MA2_RequestStatus($id);" }
   ]
 }
