@@ -1,7 +1,20 @@
 {
   "elements":
   [
-    { "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Adresse" }
+    { "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Adresse" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl1", "caption": "Heizkreislauf 1" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl2", "caption": "Heizkreislauf 2" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl3", "caption": "Heizkreislauf 3" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl4", "caption": "Heizkreislauf 4" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl5", "caption": "Heizkreislauf 5" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl6", "caption": "Heizkreislauf 6" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl7", "caption": "Heizkreislauf 7" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl8", "caption": "Heizkreislauf 8" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl9", "caption": "Heizkreislauf 9" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl10", "caption": "Heizkreislauf 10" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl11", "caption": "Heizkreislauf 11" },
+	{ "type": "CheckBox", "name": "ShowHeatCtrl12", "caption": "Heizkreislauf 12" }
+
   ],
   "actions":
   [
