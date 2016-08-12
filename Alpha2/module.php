@@ -673,7 +673,7 @@ class MoehlenhoffAlpha2 extends IPSModule
 		
 	}
 
-	public function RequestAction($Ident, $Value) {
+	public function WriteValue($Ident, $Value) {
 
 		$xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><Devices></Devices>');
 
@@ -717,8 +717,14 @@ class MoehlenhoffAlpha2 extends IPSModule
 		}
 		
 	}
-	
-	public function SendChanges($Xml){
+
+	public function RequestAction($Ident, $Value) {
+		
+		$this->WriteValue($Ident, $Value);
+		
+	}
+
+	private function SendChanges($Xml){
 		
 		$url = "http://".$this->ReadPropertyString('IPAddress')."/data/changes.xml";
 		$header  = "POST HTTP/1.0 \r\n";
