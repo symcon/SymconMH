@@ -25,8 +25,9 @@ Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 ### 3. Software-Installation
 
-Über das Modul-Control folgende URL hinzufügen.
-`https://github.com/symcon/SymconMH.git`
+* Über den Modul Store das Modul Möhlenhoff Alpha 2 installieren.
+* Alternativ über das Modul Control folgende URL hinzufügen:
+´https://github.com/symcon/MH`
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
