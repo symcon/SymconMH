@@ -3,6 +3,9 @@
     "author": "Symcon GmbH",
     "name": "Möhlenhoff",
     "url": "",
+    "compatibility": {
+		"version": "4.2"
+	},
     "version": "1.0",
     "build": 0,
     "date": 0

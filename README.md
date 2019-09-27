@@ -2,7 +2,7 @@
 Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 
-### Inhaltverzeichnis
+### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
 2. [Voraussetzungen](#2-voraussetzungen)
@@ -21,7 +21,7 @@ Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 ### 2. Voraussetzungen
 
-- IP-Symcon ab Version 4.x
+- IP-Symcon ab Version 4.2
 
 ### 3. Software-Installation
 
