@@ -2,7 +2,7 @@
 Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 
-### Inhaltverzeichnis
+### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
 2. [Voraussetzungen](#2-voraussetzungen)
@@ -21,13 +21,13 @@ Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 ### 2. Voraussetzungen
 
-- IP-Symcon ab Version 4.x
+- IP-Symcon ab Version 4.0
 
 ### 3. Software-Installation
 
-* Über den Modul Store das Modul Möhlenhoff Alpha 2 installieren.
-* Alternativ über das Modul Control folgende URL hinzufügen:
-´https://github.com/symcon/MH`
+* Über den Module Store das Modul Möhlenhoff Alpha 2 installieren.
+* Alternativ über das Module Control folgende URL hinzufügen:
+`https://github.com/symcon/MH`
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
