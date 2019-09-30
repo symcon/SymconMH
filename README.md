@@ -21,7 +21,7 @@ Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 ### 2. Voraussetzungen
 
-- IP-Symcon ab Version 4.2
+- IP-Symcon ab Version 4.0
 
 ### 3. Software-Installation
 
