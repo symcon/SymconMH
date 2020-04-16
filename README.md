@@ -35,7 +35,7 @@ Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
-- Unter "Instanz hinzufügen" ist das 'Möhlenhoff Alpha 2'-Modul unter dem Hersteller 'Möhlenhoff' aufgeführt.
+- Unter "Instanz hinzufügen" kann das 'Möhlenhoff Alpha 2'-Modul mithilfe der Schnellsuche gefunden werden.
 
 __Konfigurationsseite__:
 
