@@ -711,7 +711,7 @@ class MoehlenhoffAlpha2 extends IPSModule
             if ($Attr != '') {
                 $Command->addAttribute('nr', $Attr);
             }
-            $Command->addChild($KeySplit[1], $Value);
+            $Command->addChild($KeySplit[1], strval($Value));
         }
 
         //IPS_LogMessage("Alpha2", $xml->asXML());
