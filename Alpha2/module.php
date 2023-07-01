@@ -691,7 +691,7 @@ class MoehlenhoffAlpha2 extends IPSModule
             $Value = $Value ? '1' : '0';
         }
         if (self::GetTypeForIdent($Ident) == 2 /* Float */) {
-            $Value = str_replace(',', '.', $Value);
+            $Value = str_replace(',', '.', strval($Value));
         }
 
         $Key = self::GetKeyForIdent($Ident);
