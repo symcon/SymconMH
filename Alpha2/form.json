@@ -1,24 +1,85 @@
 {
-  "elements":
-  [
-	{ "type": "ValidationTextBox", "name": "IPAddress", "caption": "IP-Adresse" },
-	{ "type": "Label", "label":  "Intervall für das Abfragen der Daten" },
-	{ "type": "IntervalBox", "name" : "Interval", "caption": "Sekunden" },
-	{ "type": "CheckBox", "name": "ShowHeatArea01", "caption": "Heizzone 1" },
-	{ "type": "CheckBox", "name": "ShowHeatArea02", "caption": "Heizzone 2" },
-	{ "type": "CheckBox", "name": "ShowHeatArea03", "caption": "Heizzone 3" },
-	{ "type": "CheckBox", "name": "ShowHeatArea04", "caption": "Heizzone 4" },
-	{ "type": "CheckBox", "name": "ShowHeatArea05", "caption": "Heizzone 5" },
-	{ "type": "CheckBox", "name": "ShowHeatArea06", "caption": "Heizzone 6" },
-	{ "type": "CheckBox", "name": "ShowHeatArea07", "caption": "Heizzone 7" },
-	{ "type": "CheckBox", "name": "ShowHeatArea08", "caption": "Heizzone 8" },
-	{ "type": "CheckBox", "name": "ShowHeatArea09", "caption": "Heizzone 9" },
-	{ "type": "CheckBox", "name": "ShowHeatArea10", "caption": "Heizzone 10" },
-	{ "type": "CheckBox", "name": "ShowHeatArea11", "caption": "Heizzone 11" },
-	{ "type": "CheckBox", "name": "ShowHeatArea12", "caption": "Heizzone 12" }
-  ],
-  "actions":
-  [
-	{ "type": "Button", "label": "Gerät auslesen", "onClick": "MA2_RequestStatus($id);" }
-  ]
+    "elements": [
+        {
+            "type": "ValidationTextBox",
+            "name": "IPAddress",
+            "caption": "IP-Adresse"
+        },
+        {
+            "type": "Label",
+            "label": "Intervall für das Abfragen der Daten"
+        },
+        {
+            "type": "IntervalBox",
+            "name": "Interval",
+            "caption": "Sekunden"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea01",
+            "caption": "Heizzone 1"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea02",
+            "caption": "Heizzone 2"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea03",
+            "caption": "Heizzone 3"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea04",
+            "caption": "Heizzone 4"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea05",
+            "caption": "Heizzone 5"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea06",
+            "caption": "Heizzone 6"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea07",
+            "caption": "Heizzone 7"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea08",
+            "caption": "Heizzone 8"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea09",
+            "caption": "Heizzone 9"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea10",
+            "caption": "Heizzone 10"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea11",
+            "caption": "Heizzone 11"
+        },
+        {
+            "type": "CheckBox",
+            "name": "ShowHeatArea12",
+            "caption": "Heizzone 12"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Button",
+            "label": "Gerät auslesen",
+            "onClick": "MA2_RequestStatus($id);"
+        }
+    ]
 }
