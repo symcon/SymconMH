@@ -726,6 +726,24 @@ class MoehlenhoffAlpha2 extends IPSModule
         $this->WriteValue($Ident, $Value);
     }
 
+    public function RequestStatus()
+    {
+        $xml = @simplexml_load_file('http://' . $this->ReadPropertyString('IPAddress') . '/data/static.xml');
+        if ($xml === false) {
+            return;
+        }
+
+        $this->SetValuesArray(self::$values, $xml);
+
+        if (GetValue($this->GetIDForIdent($this->ReduceToIdent('VERS_SW_STM'))) >= '02.02') {
+            $this->MaintainArray(self::$valuesHeatCtrlExt);
+            $this->SetValuesArray(self::$valuesHeatCtrlExt, $xml);
+        } else {
+            $this->MaintainArray(self::$valuesHeatCtrl);
+            $this->SetValuesArray(self::$valuesHeatCtrl, $xml);
+        }
+    }
+
     private function SendChanges($Xml)
     {
         $url = 'http://' . $this->ReadPropertyString('IPAddress') . '/data/changes.xml';
@@ -752,24 +770,6 @@ class MoehlenhoffAlpha2 extends IPSModule
         } else {
             curl_close($ch);
             return true;
-        }
-    }
-
-    public function RequestStatus()
-    {
-        $xml = @simplexml_load_file('http://' . $this->ReadPropertyString('IPAddress') . '/data/static.xml');
-        if ($xml === false) {
-            return;
-        }
-
-        $this->SetValuesArray(self::$values, $xml);
-
-        if (GetValue($this->GetIDForIdent($this->ReduceToIdent('VERS_SW_STM'))) >= '02.02') {
-            $this->MaintainArray(self::$valuesHeatCtrlExt);
-            $this->SetValuesArray(self::$valuesHeatCtrlExt, $xml);
-        } else {
-            $this->MaintainArray(self::$valuesHeatCtrl);
-            $this->SetValuesArray(self::$valuesHeatCtrl, $xml);
         }
     }
 
