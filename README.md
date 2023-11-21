@@ -1,4 +1,4 @@
-# Mählenhoff Alpha2
+# Möhlenhoff Alpha2
 
 [![IP-Symcon is awesome!](https://img.shields.io/badge/IP--Symcon-4.0-blue.svg)](https://www.symcon.de)
 [![Check Style](https://github.com/symcon/SymconMH/workflows/Check%20Style/badge.svg)](https://github.com/symcon/SymconMH/actions)
