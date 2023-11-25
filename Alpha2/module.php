@@ -716,7 +716,7 @@ class MoehlenhoffAlpha2 extends IPSModule
             $Command->addChild($KeySplit[1], strval($Value));
         }
 
-        //IPS_LogMessage("Alpha2", $xml->asXML());
+        $this->SendDebug("WriteValue", $xml->asXML(), 0);
 
         if ($this->sendChanges($xml)) {
             SetValue($this->GetIDForIdent($Ident), $Value);
@@ -731,6 +731,7 @@ class MoehlenhoffAlpha2 extends IPSModule
     public function RequestStatus()
     {
         $xml = @simplexml_load_file('http://' . $this->ReadPropertyString('IPAddress') . '/data/static.xml');
+        //$xml = simplexml_load_file(__DIR__ . '/../tests/data/static.xml');
         if ($xml === false) {
             return;
         }
