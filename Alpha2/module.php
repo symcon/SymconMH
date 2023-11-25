@@ -24,10 +24,10 @@ class MoehlenhoffAlpha2 extends IPSModule
         'ECO_INPUT_STATE'         => ['Name' => 'Basis Absenkeingang', 'Type' => 0, 'Profile' => '~Switch', 'Action' => false, 'Position' => 50],
         //"PUMP_OUTPUT/PUMP_LEADTIME" => Array("Name" => "Pumpen Vorlaufzeit (Minuten)", "Type" => 1, "Profile" => "MH.PumpTime", "Action" => true, "Position" => 50),
         //"PUMP_OUTPUT/PUMP_STOPPINGTIME" => Array("Name" => "Pumpen Nachlaufzeit (Minuten)", "Type" => 1, "Profile" => "MH.PumpTime", "Action" => true, "Position" => 50),
-        "PUMP_OUTPUT/PUMP_ISACTIVE"      => ['Name' => 'Pumpe Aktiv', 'Type' => 0, 'Profile' => '~Switch', 'Action' => true, 'Position' => 50],
+        'PUMP_OUTPUT/PUMP_ISACTIVE'      => ['Name' => 'Pumpe Aktiv', 'Type' => 0, 'Profile' => '~Switch', 'Action' => true, 'Position' => 50],
         //"RELAIS/RELAIS_LEADTIME" => Array("Name" => "Relais Vorlaufzeit (Minuten)", "Type" => 1, "Profile" => "MH.RelaisTime", "Action" => true, "Position" => 50),
         //"RELAIS/RELAIS_STOPPINGTIME" => Array("Name" => "Relais Nachlaufzeit (Minuten)", "Type" => 1, "Profile" => "MH.RelaisTime", "Action" => true, "Position" => 50),
-        "RELAIS/RELAIS_ISACTIVE"         => ['Name' => 'Relais Aktiv', 'Type' => 0, 'Profile' => '~Switch', 'Action' => true, 'Position' => 50],
+        'RELAIS/RELAIS_ISACTIVE'         => ['Name' => 'Relais Aktiv', 'Type' => 0, 'Profile' => '~Switch', 'Action' => true, 'Position' => 50],
         //"EMERGENCYMODE/EMERGENCYMODE_TIME" => Array("Name" => "Notbetrieb Aktivierungszeit (Minuten)", "Type" => 1, "Profile" => "MH.EmergencyTime", "Action" => true, "Position" => 50),
         //"EMERGENCYMODE/PWMCYCLE" => Array("Name" => "Notbetrieb PWM-Zyklusdauer (Minuten)", "Type" => 1, "Profile" => "MH.PWMCycle", "Action" => true, "Position" => 50),
         //"EMERGENCYMODE/PWMHEAT" => Array("Name" => "Notbetrieb PWM Heizendauer (Prozent)", "Type" => 1, "Profile" => "MH.PWMPercent", "Action" => true, "Position" => 50),
@@ -716,7 +716,7 @@ class MoehlenhoffAlpha2 extends IPSModule
             $Command->addChild($KeySplit[1], strval($Value));
         }
 
-        $this->SendDebug("WriteValue", $xml->asXML(), 0);
+        $this->SendDebug('WriteValue', $xml->asXML(), 0);
 
         if ($this->sendChanges($xml)) {
             SetValue($this->GetIDForIdent($Ident), $Value);
