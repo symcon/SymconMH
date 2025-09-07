@@ -6,6 +6,6 @@
 
 Folgende Module beinhaltet das Alpha2 Repository:
 
-- __Alpha2__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/moehlenhoff-alpha-2))  
+- __Alpha2__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/moehlenhoff-alpha-2/))  
 	Das Modul dient zum Empfangen und Schalten von Möhlenhoff Alpha2 Daten.
 
